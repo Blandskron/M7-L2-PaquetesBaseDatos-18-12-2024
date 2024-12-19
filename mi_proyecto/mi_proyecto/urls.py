@@ -23,8 +23,4 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('usuarios/', lista_usuarios, name='lista_usuarios'),
     path('productos/', productos_en_stock, name='productos_en_stock'),
-    """
-    path('users/', views.list_users, name='list_users'),
-    path('products/', views.products_in_stock, name='products_in_stock'),
-    """
 ]
