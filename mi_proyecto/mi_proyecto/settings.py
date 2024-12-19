@@ -76,14 +76,15 @@ WSGI_APPLICATION = 'mi_proyecto.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': '',
-        'USER': '',
-        'PASSWORD': '',
-        'HOST': '',
-        'PORT': '',
+        'ENGINE': 'django.db.backends.postgresql',  # Motor de base de datos
+        'NAME': 'mi_app_db',  # Nombre de la base de datos
+        'USER': 'admin',  # Usuario definido en docker-compose
+        'PASSWORD': 'admin1234',  # Contraseña definida en docker-compose
+        'HOST': 'db',  # El nombre del servicio del contenedor PostgreSQL
+        'PORT': '5432',  # Puerto del servicio PostgreSQL
     }
 }
+
 
 
 # Password validation
